@@ -26,5 +26,5 @@ This can be convenient for staging environment. (`flock` prevent concurrent task
 
 1. git directory on server
 2. before update script (if script missing, skip it)
-3. before update script (if script missing, skip it)
+3. after update script (if script missing, skip it)
 4. log file
