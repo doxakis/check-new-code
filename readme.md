@@ -16,7 +16,7 @@ This can be convenient for staging environment. (`flock` prevent concurrent task
     - Press on: Deploy keys
     - Press on: Add deploy key
     - Paste in the content of id_rsa.pub (`cat .ssh/id_rsa.pub`)
-5. Clone the repo: ``
+5. Clone the repo: `git clone https://github.com/doxakis/check-new-code`
 6. Add scheduled task: `crontab -e`
     - ex: Check every minute. `* * * * * flock /root/myrepo-check-new-code.lock -c "bash /root/check-new-code/check-new-code.sh /root/myrepo /root/myrepo/beforeUpdate.sh /root/myrepo/afterUpdate.sh /root/myrepo-updatelog.txt"`
 
