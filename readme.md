@@ -8,8 +8,8 @@ This can be convenient for staging environment. (`flock` prevent concurrent task
 
 # Installation
 
-1. Update `sudo apt-get update`
-2. Generate a new ssh key for this machine: `ssh-keygen -t rsa`
+1. (if not already done) Update: `sudo apt-get update`
+2. (if not already done) Generate a new ssh key for this machine: `ssh-keygen -t rsa`
 3. (optional) Make sure timezone is configured. ex: `sudo timedatectl set-timezone America/New_York`
 4. Add Deploy keys on your GitHub repo:
     - From repo: Settings tab
